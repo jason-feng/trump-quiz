@@ -1,0 +1,238 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: "16px";
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+nav {
+  top: initial;
+  width: 100%;
+  height: 150px;
+  z-index: 100;
+  background-image: url(assets/background-header.png);
+}
+
+nav .logo{
+  background-image: url(assets/buzzfeed-logo-small.png);
+  background-size: 200px 62px;
+  color: #2c2d30;
+  width: 200px;
+  height: 62px;
+  float: left;
+  margin: 5px 0 0 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 20px 0 0;
+  padding: 0;
+  float: right;
+  line-height: 70px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #253039;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 9px;
+  position: relative;
+  cursor: pointer;
+  line-height: 1em;
+  padding: 8px 7px 9px;
+  border-radius: 5px;
+  opacity: .8;
+}
+
+.main-content {
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content h1 {
+  text-align: center;
+}
+
+.question-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.quiz-question {
+  max-width: 1000px;
+}
+
+.questions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.questions-list {
+
+}
+
+.questions, .questions li {
+  margin: 25px auto;
+}
+
+.questions-list p, .image-questions-list p {
+  max-width: 600px;
+}
+
+.image-questions-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.image-questions-list img {
+  max-width: 400px;
+}
+
+.image-questions-list > div {
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.image-questions-list > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answer {
+  display: none;
+}
+
+.btn {
+  border: 0;
+  margin: 0;
+  border-radius: 4px;
+  padding: 14px 32px;
+  cursor: pointer;
+  height: 53px;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #42c299;
+  color: #fff!important;
+  text-shadow: none;
+  position: relative;
+}
+
+footer {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-top: 1px solid #E8E8E8;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+  padding: 40px 0 0;
+  color: #9e9ea6;
+}
+
+footer section {
+  clear: both;
+  box-sizing: border-box;
+  max-width: 1014px;
+  padding: 0 1.5rem!important;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+}
+
+.col {
+  display: block;
+  float: left;
+  margin: 0 0 2%;
+  padding-right: 2%;
+  width: 23.8%;
+}
+
+.col+.col {
+  margin-left: 1.6%;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.col-header {
+  color: #EDB431;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: Slack-Lato,appleLogo,sans-serif;
+  font-weight: 700;
+}
+
+.col-item {
+  font-size: .82rem;
+  color: #9e9ea6;
+  text-decoration: none;
+}
+
+.footnote {
+  margin-top: 1rem;
+  background-color: rgba(0,0,0,.05);
+  overflow: hidden;
+  min-height: 50px;
+  height: 50px;
+}
+
+.footnote ul {
+  margin: 0 20px 0 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+}
+
+.footnote ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: .7rem;
+  float: left;
+  line-height: 50px;
+}
+
+footer ul a, footer ul a:link {
+  font-size: .82rem;
+  color: #9e9ea6;
+  text-decoration: none;
+}

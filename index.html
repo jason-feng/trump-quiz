@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Buzzfeed Quiz</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <nav>
+    <a class="logo" href="https://slack.com/"></a>
+    <ul>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Videos</a></li>
+      <li><a href="#">Quizzes</a></li>
+      <li><a href="#">Tasty</a></li>
+      <li><a href="#">More<a></li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <h1>This Quiz will tell you what kind of Trump you are</h1>
+    <ul class="questions">
+      <li class="quiz-question">
+        <header class="question-header">
+          <h3 class="question-title">What is your favorite Trump business</h3>
+          <div class="question-image">
+            <img src="assets/trump-business.jpg"></img>
+          </div>
+        </header>
+        <div class="questions-list">
+          <p><input type="checkbox" id="business1" value="1" name="question[1][]"><label for="business1">Trump University</label></input></p>
+          <p><input type="checkbox" id="business2" value="2" name="question[1][]"><label for="business2">Trump Steak</label></input></p>
+          <p><input type="checkbox" id="business3" value="3" name="question[1][]"><label for="business3">Trump Vodka</label></input></p>
+          <p><input type="checkbox" id="business4" value="4" name="question[1][]"><label for="business4">Trump Marriages</label></input></p>
+        </div>
+      </li>
+      <li class="quiz-question">
+        <header class="question-header">
+          <h3 class="question-title">What is your favorite Trump tweet</h3>
+          <div class="question-image">
+            <img src="assets/trump-tweet.jpg"></img>
+          </div>
+        </header>
+        <div class="questions-list">
+          <p><input type="checkbox" id="tweet1" value="4" name="question[2][]"><label for="tweet1">(John McCain is) not a war hero..., He's a war hero because he was captured. I like people that weren't captured.</label></p>
+          <p><input type="checkbox" id="tweet2" value="3" name="question[2][]"><label for="tweet2">How stupid are the people of Iowa? after talking about a poll showing Ben Carson was beating him in Iowa</label></p>
+          <p><input type="checkbox" id="tweet3" value="2" name="question[2][]"><label for="tweet3">You know, it really doesn't matter what they write as long as you've got a young and beautiful piece of ass.</label></p>
+          <p><input type="checkbox" id="tweet4" value="1" name="question[2][]"><label for="tweet4">I've said if Ivanka weren't my daughter, perhaps I'd be dating her.</label></p>
+        </div>
+      </li>
+      <li class="quiz-question">
+        <header class="question-header">
+          <h3 class="question-title">What is your favorite version of tiny Trump?</h3>
+          <div class="question-image">
+            <img src="assets/trump-tiny.jpg"></img>
+          </div>
+        </header>
+        <div class="image-questions-list">
+          <div class="question">
+            <img src="assets/tiny-state.jpg"></img>
+            <p><input type="checkbox" id="tiny1" value="3" name="question[3][]"><label for="tiny1">Tiny Trump State Visit</label></p>
+          </div>
+          <div class="question">
+            <img src="assets/tiny-obama.jpg"></img>
+            <p><input type="checkbox" id="tiny2" value="4" name="question[3][]"><label for="tiny2">Tiny Trump on Vacation with Obama</label></p>
+          </div>
+
+          <div class="question">
+            <img src="assets/tiny-putin.jpg"></img>
+            <p><input type="checkbox" id="tiny3" value="2" name="question[3][]"><label for="tiny3">Tiny Trump and Putin</label></p>
+          </div>
+          <div class="question">
+            <img src="assets/tiny-justin.jpg"></img>
+            <p><input type="checkbox" id="tiny4" value="1" name="question[3][]"><label for="tiny4">Tiny Trump Meets Justin Trudeau</label></p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="answers">
+      <button type="submit" id="show-answer">Show Answer!</button><br>
+      <div class="answer" id="answer0">
+        <h3>You are tiny trump</h3>
+        <img src="assets/trump-tiny.jpg"></img>
+      </div>
+      <div class="answer" id="answer1">
+        <h3>You are corn trump</h3>
+        <img src="assets/corn-trump.jpg"></img>
+      </div>
+      <div class="answer" id="answer2">
+        <h3>You are orange trump</h3>
+        <img src="assets/orange-trump.jpg"></img>
+      </div>
+    </div>
+
+    <footer>
+      <section>
+        <div class="grid">
+          <div class="col">
+            <ul>
+              <li class="col-header">USING SLACK</li>
+              <li class="col-item"><a href="#">Product</a></li>
+              <li class="col-item"><a href="#">Enterprise</a></li>
+              <li class="col-item"><a href="#">Pricing</a></li>
+              <li class="col-item"><a href="#">Support</a></li>
+              <li class="col-item"><a href="#">Slack Guides</a></li>
+              <li class="col-item"><a href="#">Video Guides</a></li>
+              <li class="col-item"><a href="#">App Directory</a></li>
+              <li class="col-item"><a href="#">API</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="col-header">SLACK</li>
+              <li class="col-item"><a href="#">Jobs</a></li>
+              <li class="col-item"><a href="#">Customers</a></li>
+              <li class="col-item"><a href="#">Developers</a></li>
+              <li class="col-item"><a href="#">Events</a></li>
+              <li class="col-item"><a href="#">Blog</a></li>
+              <li class="col-item"><a href="#">Podcast</a></li>
+              <li class="col-item"><a href="#">Slack Shop</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="col-header">LEGAL</li>
+              <li class="col-item"><a href="#">Privacy</a></li>
+              <li class="col-item"><a href="#">Security</a></li>
+              <li class="col-item"><a href="#">Terms of Service</a></li>
+              <li class="col-item"><a href="#">Policies</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="col-header">Handy Links</li>
+              <li class="col-item"><a href="#">Download desktop app</a></li>
+              <li class="col-item"><a href="#">Download mobile app</a></li>
+              <li class="col-item"><a href="#">Brand Guidelines</a></li>
+              <li class="col-item"><a href="#">Slack at Work</a></li>
+              <li class="col-item"><a href="#">Status</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="footnote">
+          <a href="https://slack.com/"></a>
+          <ul>
+            <li>Contact us</li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">YT</a></li>
+          </ul>
+        </div>
+      </section>
+      <script type="text/javascript">
+        var totalValue = 0;
+
+        const checkQuestionsAnswered = function() {
+          var selected = [];
+          $('input:checked').each(function() {
+              selected.push($(this).attr('name'));
+          });
+
+          if (selected.length == 3) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+
+        $('input[type="checkbox"]').on('change', function() {
+            $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+        });
+
+        $("#show-answer").click(function(){
+            if (checkQuestionsAnswered() == true) {
+              const answerNumber = Math.floor(Math.random() * 3);
+              console.log(answerNumber)
+              if (answerNumber == 0) {
+                $("#answer0").show()
+              } else if (answerNumber == 1) {
+                $("#answer1").show()
+              } else {
+                $("#answer2").show()
+              }
+              alert("Aren't you glad you're not Trump????!??")
+            }
+        });
+      </script>
+    </footer>
+</body>
+<
+</html>
